@@ -3,7 +3,7 @@ document.getElementById("dif").innerHTML = "<button onclick='vocal(9)' id='vocal
 <br> <br>\
 <input type='text' id='letras' readonly>\
 <br> <br>\
-<button onclick='buscarSoluciones(9)'id='buscarSoluciones' disabled>Buscar Soluciones</button>\
+<button onclick='buscarSoluciones(9)'id='buscarSoluciones' disabled>Mostrar Soluciones</button>\
 <br> <br>\
 <button onclick='reset(9)' id='reset' disabled>Reiniciar Juego</button>\
 <br> <br>\

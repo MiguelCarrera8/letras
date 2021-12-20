@@ -39,12 +39,12 @@ function menuPrincipal() {
 }
 
 function ayudaMenu() {
-    document.getElementById("dif").innerHTML = "En el modo de <strong>'Mostrar e introducir palabras'</strong> deberá pulsar los botones para imprimir en pantalla <br> \
+    document.getElementById("dif").innerHTML = "En el modo de <strong>'Mostrar e introducir palabras'</strong> deberá pulsar los botones <strong>'VOCAL'</strong> y <strong>'CONSONANTE'</strong> para imprimir en pantalla <br> \
     vocales y consonantes aleatorias seleccionando la dificultad, y en el cuadro de texto <br>\
-     del final deberá introducir las palabras que crea oportunas una por una,<br> pulsando enter cuando haya escrito la palabra y quiera introducirla. <br> <br>\
+     del final deberá introducir las palabras que crea oportunas una por una,<br> pulsando enter cuando haya escrito la palabra y quiera introducirla. Para finalizar el juego y mostrar las soluciones deberá pulsar el botón <strong>'Mostrar soluciones'</strong><br> <br>\
     <button onclick=\"jugar()\">Mostrar e introducir palabras</button> <br> <br>\
-    En el modo <strong>'Mostrar palabras'</strong> solamente deberá pulsar aleatoriamente los botones <strong>'vocal'</strong> y <strong>'consonante'</strong> y cuando <br>\
-    esté el máximo de letras impresas en pantalla deberá pulsar el botón de <strong>'Buscar Soluciones'</strong><br> <br>\
+    En el modo <strong>'Mostrar palabras'</strong> solamente deberá pulsar aleatoriamente los botones <strong>'VOCAL'</strong> y <strong>'CONSONANTE'</strong> y cuando <br>\
+    esté el máximo de letras impresas en pantalla deberá pulsar el botón de <strong>'Mostrar Soluciones'</strong><br> <br>\
     <button onclick=\"noJugar()\">Mostrar palabras</button> <br> <br>";
 }
 
