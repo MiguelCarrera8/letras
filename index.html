@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifras y Letras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="diccionario.js"></script>
+    <script src="functions.js"></script>
+    
+    <script>
+        let nLetras = 1;
+        
+        let letras = [];
+
+        let palabraUsuario = [];
+
+        let stringPalabraUsuario = "";
+
+        let tipoJuego = false;
+    </script>
+
+</head>
+<body>
+    <h1>Juego de las Letras</h1>
+    <div id="dif">
+        Seleccione el modo de juego : <br> <br>
+        <button onclick="jugar()">Mostrar e introducir palabras</button> <br> <br>
+        <button onclick="noJugar()">Mostrar palabras</button> <br> <br>
+        <button onclick="ayudaMenu()">Ayuda</button>
+    </div>
+</body>
+</html>

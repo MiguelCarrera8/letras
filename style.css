@@ -1,0 +1,46 @@
+body{
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: large;
+}
+
+button{
+    font-size: 15px;
+    width: 230px;
+    height: 40px;
+    border-color: darkgray;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input{
+    text-align: center;
+    font-size: 30px;
+    width: 220px;
+    height: 35px;
+    border-color: darkgray;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+}
+
+#dif{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: darkgray;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+}
