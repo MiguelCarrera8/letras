@@ -394,14 +394,19 @@ function introPalabra(valor) {
     }
     if (repetida == false) {
         let palabra = valor.value.toLowerCase();
-        if(palabraUsuario.length == 0){
-            document.getElementById("palabrasUsuario").innerHTML = palabra;
-            stringPalabraUsuario = palabra;  
+        if(palabra.length < 4){
+            document.getElementById("fallo").innerHTML = "La palabra debe tener una longitud mínima de 4 caracteres";
         }else{
-            document.getElementById("palabrasUsuario").innerHTML += ` , ${palabra}`;
-            stringPalabraUsuario += ` , ${palabra}`;
+            document.getElementById("fallo").innerHTML = "";
+            if(palabraUsuario.length == 0){
+                document.getElementById("palabrasUsuario").innerHTML = palabra;
+                stringPalabraUsuario = palabra;  
+            }else{
+                document.getElementById("palabrasUsuario").innerHTML += ` , ${palabra}`;
+                stringPalabraUsuario += ` , ${palabra}`;
+            }
+            palabraUsuario.push(palabra);
         }
-        palabraUsuario.push(palabra);
     }
     valor.value = "";
     console.log(palabraUsuario);
