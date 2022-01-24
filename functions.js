@@ -361,6 +361,8 @@ function buscarSoluciones(dificultad) {
         }
         if(palabraUsuario < aciertos){
             document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${aciertos}`;
+        }else{
+            document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${palabraUsuario}`;
         }
     }
 }
