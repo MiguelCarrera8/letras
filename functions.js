@@ -359,7 +359,9 @@ function buscarSoluciones(dificultad) {
             document.getElementById("Uocho").innerHTML += usuario_ocho;
             document.getElementById("Unueve").innerHTML += usuario_nueve;
         }
-        document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${aciertos}`;
+        if(palabraUsuario < aciertos){
+            document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${aciertos}`;
+        }
     }
 }
 
