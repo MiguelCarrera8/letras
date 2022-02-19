@@ -359,11 +359,7 @@ function buscarSoluciones(dificultad) {
             document.getElementById("Uocho").innerHTML += usuario_ocho;
             document.getElementById("Unueve").innerHTML += usuario_nueve;
         }
-        if(palabraUsuario < aciertos){
-            document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${aciertos}`;
-        }else{
-            document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${palabraUsuario.length}`;
-        }
+        document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${aciertos}`;
     }
 }
 
@@ -413,7 +409,6 @@ function introPalabra(valor) {
         }
     }
     valor.value = "";
-    console.log(palabraUsuario);
 }
 
 function comprobarTeclas() {

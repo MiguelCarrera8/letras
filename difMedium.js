@@ -4,7 +4,6 @@ document.getElementById("dif").innerHTML = "<button onclick='vocal(7)' id='vocal
 <input type='text' id='letras' readonly>\
 <br> <br>\
 <button onclick='buscarSoluciones(7)' id='buscarSoluciones' disabled>Mostrar Soluciones</button>\
-<br> <br>\
 <button onclick='reset(7)' id='reset' disabled>Reiniciar Juego</button>\
 <br> <br>\
 <button onclick='cambiarDificultad()'>Cambiar Dificultad</button> \
