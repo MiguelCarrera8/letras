@@ -133,10 +133,19 @@ function vaciarArray(array) {
 function cargarSolucion(dificultad, letras) {
     soluciones = [];
     palabraUsuario = [];
+    repetidas = [];
+
     if (soluciones.length != 0) {
         vaciarArray(soluciones);
     }
     diccionario.forEach(element => {
+        let elementAnterior = "";
+        if(elementAnterior == element){
+            repetidas.push(element);
+            elementAnterior = element;
+        }else{
+            elementAnterior = element;
+        }
         let j = 0;
         letras = letras.sort();
         let palabra = element.split("");
@@ -278,11 +287,16 @@ function buscarSoluciones(dificultad) {
 
         let aciertos = 0;
         let acertadas = [];
+        let resta = 0;
         for (let i = 0; i< palabraUsuario.length;i++){
             for(let j = 0; j < soluciones.length; j++){
                 if(palabraUsuario[i] == soluciones[j]){
-                    aciertos++;
-                    acertadas.push(palabraUsuario[i]);
+                    if(palabraUsuario[i] in acertadas){
+                        resta++
+                    }else{
+                        aciertos++;
+                        acertadas.push(palabraUsuario[i]);
+                    }
                 }
             }
         }
@@ -360,7 +374,7 @@ function buscarSoluciones(dificultad) {
             document.getElementById("Uocho").innerHTML += usuario_ocho;
             document.getElementById("Unueve").innerHTML += usuario_nueve;
         }
-        document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${aciertos}`;
+        document.getElementById("puntuacion").innerHTML = `<h4>De ${palabraUsuario.length} palabras introducidas has acertado un total de ${aciertos-resta}`;
     }
 }
 
