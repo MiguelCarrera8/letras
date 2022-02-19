@@ -162,6 +162,7 @@ function cargarSolucion(dificultad, letras) {
         document.getElementById("noPalabras").innerHTML = "<h2>Lo siento, no hay palabras con esas letras, por favor reinicie el juego.<h2/>";
     } else {
         document.getElementById("buscarSoluciones").disabled = false;
+        $("#palabraUsuario").attr("readonly", false);
     }
     vaciarArray(letras);
 }

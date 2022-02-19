@@ -15,7 +15,7 @@ document.getElementById("dif").innerHTML = "<button onclick='vocal(5)' id='vocal
 </div>\
 <div id=\"usuario\">\
 Introduzca las palabras que pueda formar: \
-<input type=\"text\" name=\"palabraUsuario\" id=\"palabraUsuario\" onclick=\"comprobarTeclas()\" maxlength=\"5\" minlength=\"4\"><br>\
+<input type=\"text\" name=\"palabraUsuario\" id=\"palabraUsuario\" onclick=\"comprobarTeclas()\" maxlength=\"5\" minlength=\"4\" readonly><br>\
 <span id='fallo'></span>\
 <h3 id=\"palabrasUsuario\"></h3>\
 </div>\
